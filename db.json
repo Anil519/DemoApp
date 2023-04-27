@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "uname": "Anil",
+      "pass": "Anil",
+      "id": 2
+    },
+    {
+      "uname": "Anil",
+      "pass": "Anil",
+      "id": 3
+    },
+    {
+      "uname": "syam",
+      "pass": "Syam123@",
+      "id": 4
+    },
+    {
+      "uname": "Anil",
+      "pass": "Anil",
+      "id": 5
+    },
+    {
+      "uname": "Anil",
+      "pass": "Anil",
+      "id": 6
+    },
+    {
+      "uname": "Anil",
+      "pass": "Anil",
+      "id": 7
+    },
+    {
+      "uname": "siva",
+      "pass": "siva123@",
+      "id": 8
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

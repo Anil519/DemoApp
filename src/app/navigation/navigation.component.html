@@ -1,0 +1,26 @@
+<ng-content></ng-content>
+<ul *ngFor="let person of list">
+    <li>{{person}}</li>
+</ul>
+
+<!-- <ng-container *ngFor="let p of list">
+    <li>{{p}}</li>
+
+</ng-container> -->
+
+<!-- ng-tmplate example -->
+<div *ngIf="login; else temp">
+<h1>
+    login is done
+</h1>
+</div>
+
+<ng-template #temp>
+    login not done
+</ng-template>
+<!-- ng-tmplate example -->
+
+
+
+
+
