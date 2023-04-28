@@ -5,9 +5,12 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { AuthGuard } from './auth.guard';
 import { LoginComponent } from './login/login.component';
-import { LayoutComponent } from './layout/layout.component';
+import { Test1Component } from './test1/test1.component';
 
 const routes: Routes = [
+  {
+    path:"", component:Test1Component
+  },
   {
     path:"f", component:FilterComponent
   },
