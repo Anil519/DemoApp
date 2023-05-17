@@ -20,6 +20,10 @@ export class AppService {
     return this.http.get('http://localhost:3000/posts')
   }
 
+  getFakeApi(){
+    return this.http.get('https://api.instantwebtools.net/v1/airlines	');
+  }
+
   
   updateUser(id: number, user:any) {
     const url = `${this.baseUrl}/${id}`;

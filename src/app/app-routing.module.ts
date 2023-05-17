@@ -6,16 +6,21 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { AuthGuard } from './auth.guard';
 import { LoginComponent } from './login/login.component';
 import { Test1Component } from './test1/test1.component';
+import { PaginationComponent } from './pagination/pagination.component';
+import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
   {
-    path:"", component:Test1Component
+    path:"", component:LayoutComponent
   },
   {
     path:"f", component:FilterComponent
   },
   {
     path:"l", component:LoginComponent
+  },
+  {
+    path:"p", component:PaginationComponent
   },
   {
     path:"n", component:NavigationComponent,

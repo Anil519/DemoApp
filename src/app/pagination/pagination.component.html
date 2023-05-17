@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">name</th>
+                    <th scope="col">country</th>
+                    <th scope="col">established</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let items of data">
+                    <th scope="row">{{items.id}}</th>
+                    <td>{{items.name}}</td>
+                    <td>{{items.country}}</td>
+                    <td>{{items.established}}</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+
+              <div *ngIf="recordlength>0">
+                <mat-paginator id="mail" class="pull-right" (page)="pageSizeChanged($event)"
+                [pageIndex]="pageNumber ? pageNumber-1 : '0'" [length]="recordlength"
+                [pageSize]="pageSize" [pageSizeOptions]="[15,30,50,100]" showFirstLastButtons>
+            </mat-paginator>
+            </div>
+        </div>
+         
+    </div>
+
+</div>

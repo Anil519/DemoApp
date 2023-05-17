@@ -24,7 +24,10 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import { MatInputModule } from '@angular/material/input';
 import {MatExpansionModule} from '@angular/material/expansion';
-
+import { HeaderComponent } from './header/header.component';
+import {MatCardModule} from '@angular/material/card';
+import { PaginationComponent } from './pagination/pagination.component';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 @NgModule({
@@ -38,6 +41,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     LoginComponent,
     TestComponent,
     Test1Component,
+    HeaderComponent,
+    PaginationComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +58,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatDatepickerModule,
     MatNativeDateModule,
     MatInputModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatCardModule,
+    MatPaginatorModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]
