@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row ">
+        <div class="col-12 d-flex justify-content-center">
+            <div class="captchavalid ">
+                <h1 class="d-flex justify-content-center mt-3">validate captch text</h1>
+                <input type="text" class=" captchText form-control fs-5 fw-bold text-center" id="captchText" [(ngModel)]="captch" readonly>
+                <span class="fs-3 d-flex justify-content-center mt-3"> or</span>
+                <qrcode [qrdata]="captch" [width]="110" class="d-flex justify-content-center" ></qrcode>
+                <input type="text" class=" EnterText form-control mt-2 text-center" id="EnterText" [(ngModel)]="myVariable">
+                <div class="d-flex justify-content-center mt-3">
+
+                    <button class="btn btn-success mt-2" (click)="captchtext()">Refresh</button>
+                    <button class="btn btn-primary ms-2 mt-2" (click)="validate()">Valid</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+
+</div>

@@ -1,0 +1,8 @@
+.custom-tooltip {
+    font-size: 16px; /* Increase or decrease the value as needed */
+    max-width: 300px; /* Adjust the maximum width of the tooltip */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+  }

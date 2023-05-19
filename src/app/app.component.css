@@ -5,3 +5,22 @@
 input.ng-touched.ng-valid{
     border:2px solid green
 } */
+
+app-custom-tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  app-custom-tooltip:hover .custom-tooltip {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .custom-tooltip {
+    display: none;
+  }
+  

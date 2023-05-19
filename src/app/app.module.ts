@@ -28,6 +28,11 @@ import { HeaderComponent } from './header/header.component';
 import {MatCardModule} from '@angular/material/card';
 import { PaginationComponent } from './pagination/pagination.component';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { CustomTooltipComponent } from './custom-tooltip/custom-tooltip.component';
+import { CaptchaComponent } from './captcha/captcha.component';
+import { QRCodeModule } from 'angularx-qrcode';
+
+
 
 
 @NgModule({
@@ -43,6 +48,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     Test1Component,
     HeaderComponent,
     PaginationComponent,
+    CustomTooltipComponent,
+    CaptchaComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,7 +67,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatInputModule,
     MatExpansionModule,
     MatCardModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    QRCodeModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]
